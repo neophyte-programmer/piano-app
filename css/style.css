@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+	--header-height: 3rem;
+
+	/*========== Colors ==========*/
+	--hue: 4; /*  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118 */
+	--sat: 98%; /* Yellow: 98% | Red: 90% | Orange: 85% | Green: 50% */
+	--first-color: hsl(var(--hue), var(--sat), 60%);
+	--first-color-light: hsl(var(--hue), var(--sat), 85%);
+	--first-color-lighten: hsl(var(--hue), var(--sat), 80%);
+	--first-color-alt: hsl(var(--hue), var(--sat), 53%);
+	--title-color: hsl(var(--hue), 4%, 15%);
+	--text-color: hsl(var(--hue), 4%, 35%);
+	--text-color-light: hsl(var(--hue), 4%, 65%);
+	--body-color: hsl(var(--hue), 0%, 100%);
+	--container-color: #fff;
+	--scroll-bar-color: hsl(var(--hue), 4%, 85%);
+	--scroll-thumb-color: hsl(var(--hue), 4%, 70%);
+
+	/*========== Font weight ==========*/
+	--font-semi-bold: 600;
+	--font-bold: 700;
+
+	/*========== Margins ==========*/
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+
+	/*========== Font and typography ==========*/
+	--body-font: 'Poppins', sans-serif;
+
+	--biggest-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 0.1.125rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+	--smaller-font-size: 0.75rem;
+
+	/* Responsive typography */
+	@media screen and (min-width: 968px) {
+		--biggest-font-size: 3rem;
+		--h2-font-size: 1.75rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--smaller-font-size: 0.813rem;
+	}
+}
+
+/*=============== BASE ===============*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+	transition: 0.5s; /* for dark mode animation */
+}
+
+h1,
+h2,
+h3 {
+	font-weight: var(--font-semi-bold);
+	color: var(--title-color);
+	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+	padding: 4rem 0 1rem;
+}
+
+.section__title,
+.section__title-center {
+	font-size: var(--h2-font-size);
+	color: var(--title-color);
+	text-align: center;
+	margin-bottom: var(--mb-1);
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+	max-width: 968px;
+	margin-left: var(--mb-1-5);
+	margin-right: var(--mb-1-5);
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+	width: 100%;
+	background-color: var(--container-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	transition: 0.5s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.redirect {
+    margin-right: 4rem;
+}
