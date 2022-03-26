@@ -5,7 +5,7 @@
 	--header-height: 3rem;
 
 	/*========== Colors ==========*/
-	--hue: 4; /*  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118 */
+	--hue: 210; /*  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118 */
 	--sat: 95%; /* Yellow: 98% | Red: 90% | Orange: 85% | Green: 50% */
 	--first-color: hsl(var(--hue), var(--sat), 60%);
 	--first-color-light: hsl(var(--hue), var(--sat), 85%);
@@ -103,28 +103,28 @@ img {
 	padding: 6rem 0 2rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
-  text-align: center;
+	text-align: center;
 }
 
 .section__title {
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-bottom: 2rem;
+	font-size: var(--h2-font-size);
+	color: var(--first-color);
+	margin-bottom: 2rem;
 }
 
 .section__subtitle {
-  display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color);
+	display: block;
+	font-size: var(--smaller-font-size);
+	color: var(--text-color);
 }
 
 /*=============== LAYOUT ===============*/
 .container {
 	max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .grid {
@@ -141,24 +141,24 @@ img {
 	left: 0;
 	z-index: var(--z-fixed);
 	transition: 0.5s;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
 }
 
 .logo {
-    margin-left: 2rem;
+	margin-left: 2rem;
 }
 
 .logo__link {
-    font-size: 1.1rem;
-    color: var(--first-color);
+	font-size: 1.1rem;
+	color: var(--first-color);
 }
 
 .redirect {
-    margin-right: 4rem;
+	margin-right: 4rem;
 }
 
 /*=============== BUTTONS ===============*/
@@ -175,3 +175,74 @@ img {
 .button:hover {
 	background-color: var(--first-color-alt);
 }
+
+/*=============== PIANO ===============*/
+.piano__container {
+	background-color: var(--text-color-light);
+	border: 1px solid #000;
+	height: 18.875em;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    background:linear-gradient(to bottom right,rgba(0,0,0,0.3),rgba(0,0,0,0)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/187/vwood.png);
+}
+
+.piano__octave {
+	height: 100%;
+	position: relative;
+}
+
+.key {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+
+.black__note {
+	background-color: #000;
+	height: 4rem;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+
+.white__note {
+	height: 16em;
+	width: 4em;
+	z-index: 1;
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	border-radius: 0 0 5px 5px;
+	box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #ccc inset,
+		0 0 3px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+}
+
+.white__note.active {
+	border-top: 1px solid #777;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1) inset,
+		-5px 5px 20px rgba(0, 0, 0, 0.2) inset, 0 0 3px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to bottom, #fff 0%, #e9e9e9 100%);
+}
+
+.black__note {
+	height: 8em;
+	width: 2.5em;
+	margin: 0 0 0 -3em;
+    transform: translateX(70%);
+	z-index: 2;
+	border: 1px solid #000;
+	border-radius: 0 0 3px 3px;
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
+		0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(45deg, #222 0%, #555 100%);
+}
+
+.black__note.active {
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset,
+		0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(to right, #444 0%, #222 100%);
+}
+
