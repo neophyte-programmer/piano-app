@@ -141,6 +141,7 @@ img {
 
 .logo {
     margin-left: 2rem;
+    color: var(--first-color);
 }
 
 .redirect {
