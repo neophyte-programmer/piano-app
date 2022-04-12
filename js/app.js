@@ -5,7 +5,7 @@ const cThree = new Audio()
 cThree.src = 'notes/C3.mp3'
 
 const cFour = new Audio()
-cFour.src = 'notes/C4.mp3'
+cFour.src = 'notes/mC4.mp3'
 
 const cFive = new Audio()
 cFive.src = 'notes/C5.mp3'
@@ -15,10 +15,10 @@ cSix.src = 'notes/C6.mp3'
 
 // C Sharp Notes
 const cSharpFour = new Audio()
-cSharpFour.src = 'notes/C#4.mp3'
+cSharpFour.src = 'notes/Cs4.mp3'
 
 const cSharpFive = new Audio()
-cSharpFive.src = 'notes/C#5.mp3'
+cSharpFive.src = 'notes/Cs5.mp3'
 
 // D Notes
 const dThree = new Audio()
@@ -32,10 +32,10 @@ dFive.src = 'notes/D5.mp3'
 
 // D Sharp Notes
 const dSharpThree = new Audio()
-dSharpThree.src = 'notes/D#3.mp3'
+dSharpThree.src = 'notes/Ds3.mp3'
 
 const dSharpFour = new Audio()
-dSharpFour.src = 'notes/D#4.mp3'
+dSharpFour.src = 'notes/Ds4.mp3'
 
 // E Notes
 const eThree = new Audio()
@@ -56,13 +56,13 @@ fFour.src = 'notes/F4.mp3'
 
 // F Sharp Notes
 const fSharpThree = new Audio()
-fSharpThree.src = 'notes/F#3.mp3'
+fSharpThree.src = 'notes/Fs3.mp3'
 
 const fSharpFour = new Audio()
-fSharpFour.src = 'notes/F#4.mp3'
+fSharpFour.src = 'notes/Fs4.mp3'
 
 const fSharpFive = new Audio()
-fSharpFive.src = 'notes/F#5.mp3'
+fSharpFive.src = 'notes/Fs5.mp3'
 
 // G Notes
 const gThree = new Audio()
@@ -76,7 +76,7 @@ gFive.src = 'notes/G5.mp3'
 
 // G Sharp Notes
 const gSharpFour = new Audio()
-gSharpFour.src = 'notes/G#4.mp3'
+gSharpFour.src = 'notes/Gs4.mp3'
 
 // A Notes
 const aThree = new Audio()
@@ -90,13 +90,13 @@ aFive.src = 'notes/A5.mp3'
 
 // A Sharp Notes
 const aSharpThree = new Audio()
-aSharpThree.src = 'notes/A#3.mp3'
+aSharpThree.src = 'notes/As3.mp3'
 
 const aSharpFour = new Audio()
-aSharpFour.src = 'notes/A#4.mp3'
+aSharpFour.src = 'notes/As4.mp3'
 
 const aSharpFive = new Audio()
-aSharpFive.src = 'notes/A#5.mp3'
+aSharpFive.src = 'notes/As5.mp3'
 
 // B Notes
 const bThree = new Audio()
