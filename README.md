@@ -12,3 +12,4 @@ Visit the live version of the website [here](https://nutis-piano-app.netlify.app
 - [ ] Add functionality to enable user play with keyboard as well
 - [ ] Add a demo feature 
 - [ ] Add an option to change sound e.g. to guitar, strings, trumpet etc.
+- [ ] Add an interesting favicon
