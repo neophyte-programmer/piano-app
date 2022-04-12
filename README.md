@@ -1,6 +1,8 @@
 # Piano App
 This is an online piano made with Vanilla JS, CSS and HTML.
 
+Visit the live version of the website [here](https://nutis-piano-app.netlify.app/)
+
 
 ## Things to do
 - [ ] Fix bugs with certain keys
