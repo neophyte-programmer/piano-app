@@ -34,6 +34,23 @@ function initializeKeySound(elementSelector, audioURL) {
     })
 }
 
+// Initialise sound on keypress
+function initializeKeySoundOnKeypress(letter) {
+    switch (letter) {
+        case "a":
+            initializeKeySound("#c3", "notes/C3.mp3")
+            break;
+        case "s":
+            initializeKeySound("#d3", "notes/D3.mp3")
+            break;
+    }
+}
+
+// Play sound on keypress
+document.addEventListener("keypress", (event) => {
+    initializeKeySoundOnKeypress(event.key)
+})
+
 // C Notes
 const cThree = new Audio()
 // cThree.src = 'notes/C3.mp3'
